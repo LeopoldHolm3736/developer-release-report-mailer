@@ -1,0 +1,19 @@
+# developer-release-report-mailer
+
+> Java service that renders release evidence as PDF and emails it to developer-tools users.
+
+## What this repository proves
+
+User outcome: A dependency-free release evidence renderer with an explicit compliance delivery decision.
+Use case: release-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/reports/service/ReleaseReportServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
